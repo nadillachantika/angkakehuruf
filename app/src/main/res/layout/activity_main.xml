@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="50dp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/tvAngka"
+       android:textSize="30sp"
+       android:textAlignment="center"
+       android:textColor="@android:color/black"
+       android:hint="-"
+       android:layout_marginTop="50dp"
+       android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/edAngka"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tvAngka"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bged"
+        android:textSize="20dp"
+        android:inputType="number"
+        android:maxLength="9"
+        android:textAlignment="center"
+        android:layout_marginTop="139dp" />
+
+    <Button
+        android:id="@+id/btnkon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edAngka"
+        android:layout_marginTop="30dp"
+        android:text="Konversi"
+        android:textColor="@android:color/white"
+        android:background="@drawable/bgbtn"/>
+
+</RelativeLayout>
